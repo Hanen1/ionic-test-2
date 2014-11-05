@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>bccdd303-3eec-456e-8110-8c712077cc6a</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\ionic.css" />
+    <Content Include="Content\ionic.min.css" />
+    <Content Include="fonts\ionicons.eot" />
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="fonts\ionicons.ttf" />
+    <Content Include="fonts\ionicons.woff" />
+    <Content Include="js\app.js" />
+    <Content Include="js\controllers.js" />
+    <Content Include="scripts\angular-animate.js" />
+    <Content Include="scripts\angular-animate.min.js" />
+    <Content Include="scripts\angular-animate.min.js.map" />
+    <Content Include="scripts\angular-cookies.js" />
+    <Content Include="scripts\angular-cookies.min.js" />
+    <Content Include="scripts\angular-cookies.min.js.map" />
+    <Content Include="scripts\angular-csp.css" />
+    <Content Include="scripts\angular-loader.js" />
+    <Content Include="scripts\angular-loader.min.js" />
+    <Content Include="scripts\angular-loader.min.js.map" />
+    <Content Include="scripts\angular-mocks.js" />
+    <Content Include="scripts\angular-resource.js" />
+    <Content Include="scripts\angular-resource.min.js" />
+    <Content Include="scripts\angular-resource.min.js.map" />
+    <Content Include="scripts\angular-route.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular-route.min.js.map" />
+    <Content Include="scripts\angular-sanitize.js" />
+    <Content Include="scripts\angular-sanitize.min.js" />
+    <Content Include="scripts\angular-sanitize.min.js.map" />
+    <Content Include="scripts\angular-scenario.js" />
+    <Content Include="scripts\angular-touch.js" />
+    <Content Include="scripts\angular-touch.min.js" />
+    <Content Include="scripts\angular-touch.min.js.map" />
+    <Content Include="scripts\angular-ui-router.js" />
+    <Content Include="scripts\angular-ui-router.min.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="scripts\apps\app.js" />
+    <Content Include="scripts\apps\controllers.js" />
+    <Content Include="scripts\errors.json" />
+    <Content Include="scripts\i18n\angular-locale_af-na.js" />
+    <Content Include="scripts\i18n\angular-locale_af-za.js" />
+    <Content Include="scripts\i18n\angular-locale_af.js" />
+    <Content Include="scripts\i18n\angular-locale_am-et.js" />
+    <Content Include="scripts\i18n\angular-locale_am.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-001.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-ae.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-bh.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-dz.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-eg.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-iq.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-jo.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-kw.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-lb.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-ly.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-ma.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-om.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-qa.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-sa.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-sd.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-sy.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-tn.js" />
+    <Content Include="scripts\i18n\angular-locale_ar-ye.js" />
+    <Content Include="scripts\i18n\angular-locale_ar.js" />
+    <Content Include="scripts\i18n\angular-locale_bg-bg.js" />
+    <Content Include="scripts\i18n\angular-locale_bg.js" />
+    <Content Include="scripts\i18n\angular-locale_bn-bd.js" />
+    <Content Include="scripts\i18n\angular-locale_bn-in.js" />
+    <Content Include="scripts\i18n\angular-locale_bn.js" />
+    <Content Include="scripts\i18n\angular-locale_ca-ad.js" />
+    <Content Include="scripts\i18n\angular-locale_ca-es.js" />
+    <Content Include="scripts\i18n\angular-locale_ca.js" />
+    <Content Include="scripts\i18n\angular-locale_cs-cz.js" />
+    <Content Include="scripts\i18n\angular-locale_cs.js" />
+    <Content Include="scripts\i18n\angular-locale_da-dk.js" />
+    <Content Include="scripts\i18n\angular-locale_da.js" />
+    <Content Include="scripts\i18n\angular-locale_de-at.js" />
+    <Content Include="scripts\i18n\angular-locale_de-be.js" />
+    <Content Include="scripts\i18n\angular-locale_de-ch.js" />
+    <Content Include="scripts\i18n\angular-locale_de-de.js" />
+    <Content Include="scripts\i18n\angular-locale_de-li.js" />
+    <Content Include="scripts\i18n\angular-locale_de-lu.js" />
+    <Content Include="scripts\i18n\angular-locale_de.js" />
+    <Content Include="scripts\i18n\angular-locale_el-cy.js" />
+    <Content Include="scripts\i18n\angular-locale_el-gr.js" />
+    <Content Include="scripts\i18n\angular-locale_el.js" />
+    <Content Include="scripts\i18n\angular-locale_en-as.js" />
+    <Content Include="scripts\i18n\angular-locale_en-au.js" />
+    <Content Include="scripts\i18n\angular-locale_en-bb.js" />
+    <Content Include="scripts\i18n\angular-locale_en-be.js" />
+    <Content Include="scripts\i18n\angular-locale_en-bm.js" />
+    <Content Include="scripts\i18n\angular-locale_en-bw.js" />
+    <Content Include="scripts\i18n\angular-locale_en-bz.js" />
+    <Content Include="scripts\i18n\angular-locale_en-ca.js" />
+    <Content Include="scripts\i18n\angular-locale_en-dsrt-us.js" />
+    <Content Include="scripts\i18n\angular-locale_en-dsrt.js" />
+    <Content Include="scripts\i18n\angular-locale_en-fm.js" />
+    <Content Include="scripts\i18n\angular-locale_en-gb.js" />
+    <Content Include="scripts\i18n\angular-locale_en-gu.js" />
+    <Content Include="scripts\i18n\angular-locale_en-gy.js" />
+    <Content Include="scripts\i18n\angular-locale_en-hk.js" />
+    <Content Include="scripts\i18n\angular-locale_en-ie.js" />
+    <Content Include="scripts\i18n\angular-locale_en-in.js" />
+    <Content Include="scripts\i18n\angular-locale_en-iso.js" />
+    <Content Include="scripts\i18n\angular-locale_en-jm.js" />
+    <Content Include="scripts\i18n\angular-locale_en-mh.js" />
+    <Content Include="scripts\i18n\angular-locale_en-mp.js" />
+    <Content Include="scripts\i18n\angular-locale_en-mt.js" />
+    <Content Include="scripts\i18n\angular-locale_en-mu.js" />
+    <Content Include="scripts\i18n\angular-locale_en-na.js" />
+    <Content Include="scripts\i18n\angular-locale_en-nz.js" />
+    <Content Include="scripts\i18n\angular-locale_en-ph.js" />
+    <Content Include="scripts\i18n\angular-locale_en-pk.js" />
+    <Content Include="scripts\i18n\angular-locale_en-pr.js" />
+    <Content Include="scripts\i18n\angular-locale_en-pw.js" />
+    <Content Include="scripts\i18n\angular-locale_en-sg.js" />
+    <Content Include="scripts\i18n\angular-locale_en-tc.js" />
+    <Content Include="scripts\i18n\angular-locale_en-tt.js" />
+    <Content Include="scripts\i18n\angular-locale_en-um.js" />
+    <Content Include="scripts\i18n\angular-locale_en-us.js" />
+    <Content Include="scripts\i18n\angular-locale_en-vg.js" />
+    <Content Include="scripts\i18n\angular-locale_en-vi.js" />
+    <Content Include="scripts\i18n\angular-locale_en-za.js" />
+    <Content Include="scripts\i18n\angular-locale_en-zw.js" />
+    <Content Include="scripts\i18n\angular-locale_en.js" />
+    <Content Include="scripts\i18n\angular-locale_es-419.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ar.js" />
+    <Content Include="scripts\i18n\angular-locale_es-bo.js" />
+    <Content Include="scripts\i18n\angular-locale_es-cl.js" />
+    <Content Include="scripts\i18n\angular-locale_es-co.js" />
+    <Content Include="scripts\i18n\angular-locale_es-cr.js" />
+    <Content Include="scripts\i18n\angular-locale_es-do.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ea.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ec.js" />
+    <Content Include="scripts\i18n\angular-locale_es-es.js" />
+    <Content Include="scripts\i18n\angular-locale_es-gq.js" />
+    <Content Include="scripts\i18n\angular-locale_es-gt.js" />
+    <Content Include="scripts\i18n\angular-locale_es-hn.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ic.js" />
+    <Content Include="scripts\i18n\angular-locale_es-mx.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ni.js" />
+    <Content Include="scripts\i18n\angular-locale_es-pa.js" />
+    <Content Include="scripts\i18n\angular-locale_es-pe.js" />
+    <Content Include="scripts\i18n\angular-locale_es-pr.js" />
+    <Content Include="scripts\i18n\angular-locale_es-py.js" />
+    <Content Include="scripts\i18n\angular-locale_es-sv.js" />
+    <Content Include="scripts\i18n\angular-locale_es-us.js" />
+    <Content Include="scripts\i18n\angular-locale_es-uy.js" />
+    <Content Include="scripts\i18n\angular-locale_es-ve.js" />
+    <Content Include="scripts\i18n\angular-locale_es.js" />
+    <Content Include="scripts\i18n\angular-locale_et-ee.js" />
+    <Content Include="scripts\i18n\angular-locale_et.js" />
+    <Content Include="scripts\i18n\angular-locale_eu-es.js" />
+    <Content Include="scripts\i18n\angular-locale_eu.js" />
+    <Content Include="scripts\i18n\angular-locale_fa-af.js" />
+    <Content Include="scripts\i18n\angular-locale_fa-ir.js" />
+    <Content Include="scripts\i18n\angular-locale_fa.js" />
+    <Content Include="scripts\i18n\angular-locale_fi-fi.js" />
+    <Content Include="scripts\i18n\angular-locale_fi.js" />
+    <Content Include="scripts\i18n\angular-locale_fil-ph.js" />
+    <Content Include="scripts\i18n\angular-locale_fil.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-be.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-bf.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-bi.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-bj.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-bl.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ca.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-cd.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-cf.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-cg.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ch.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ci.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-cm.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-dj.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-fr.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ga.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-gf.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-gn.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-gp.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-gq.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-km.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-lu.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-mc.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-mf.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-mg.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ml.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-mq.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-ne.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-re.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-rw.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-sn.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-td.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-tg.js" />
+    <Content Include="scripts\i18n\angular-locale_fr-yt.js" />
+    <Content Include="scripts\i18n\angular-locale_fr.js" />
+    <Content Include="scripts\i18n\angular-locale_gl-es.js" />
+    <Content Include="scripts\i18n\angular-locale_gl.js" />
+    <Content Include="scripts\i18n\angular-locale_gsw-ch.js" />
+    <Content Include="scripts\i18n\angular-locale_gsw.js" />
+    <Content Include="scripts\i18n\angular-locale_gu-in.js" />
+    <Content Include="scripts\i18n\angular-locale_gu.js" />
+    <Content Include="scripts\i18n\angular-locale_he-il.js" />
+    <Content Include="scripts\i18n\angular-locale_he.js" />
+    <Content Include="scripts\i18n\angular-locale_hi-in.js" />
+    <Content Include="scripts\i18n\angular-locale_hi.js" />
+    <Content Include="scripts\i18n\angular-locale_hr-hr.js" />
+    <Content Include="scripts\i18n\angular-locale_hr.js" />
+    <Content Include="scripts\i18n\angular-locale_hu-hu.js" />
+    <Content Include="scripts\i18n\angular-locale_hu.js" />
+    <Content Include="scripts\i18n\angular-locale_id-id.js" />
+    <Content Include="scripts\i18n\angular-locale_id.js" />
+    <Content Include="scripts\i18n\angular-locale_in.js" />
+    <Content Include="scripts\i18n\angular-locale_is-is.js" />
+    <Content Include="scripts\i18n\angular-locale_is.js" />
+    <Content Include="scripts\i18n\angular-locale_it-ch.js" />
+    <Content Include="scripts\i18n\angular-locale_it-it.js" />
+    <Content Include="scripts\i18n\angular-locale_it-sm.js" />
+    <Content Include="scripts\i18n\angular-locale_it.js" />
+    <Content Include="scripts\i18n\angular-locale_iw.js" />
+    <Content Include="scripts\i18n\angular-locale_ja-jp.js" />
+    <Content Include="scripts\i18n\angular-locale_ja.js" />
+    <Content Include="scripts\i18n\angular-locale_kn-in.js" />
+    <Content Include="scripts\i18n\angular-locale_kn.js" />
+    <Content Include="scripts\i18n\angular-locale_ko-kr.js" />
+    <Content Include="scripts\i18n\angular-locale_ko.js" />
+    <Content Include="scripts\i18n\angular-locale_ln-cd.js" />
+    <Content Include="scripts\i18n\angular-locale_ln-cg.js" />
+    <Content Include="scripts\i18n\angular-locale_ln.js" />
+    <Content Include="scripts\i18n\angular-locale_lt-lt.js" />
+    <Content Include="scripts\i18n\angular-locale_lt.js" />
+    <Content Include="scripts\i18n\angular-locale_lv-lv.js" />
+    <Content Include="scripts\i18n\angular-locale_lv.js" />
+    <Content Include="scripts\i18n\angular-locale_ml-in.js" />
+    <Content Include="scripts\i18n\angular-locale_ml.js" />
+    <Content Include="scripts\i18n\angular-locale_mr-in.js" />
+    <Content Include="scripts\i18n\angular-locale_mr.js" />
+    <Content Include="scripts\i18n\angular-locale_ms-bn.js" />
+    <Content Include="scripts\i18n\angular-locale_ms-my.js" />
+    <Content Include="scripts\i18n\angular-locale_ms.js" />
+    <Content Include="scripts\i18n\angular-locale_mt-mt.js" />
+    <Content Include="scripts\i18n\angular-locale_mt.js" />
+    <Content Include="scripts\i18n\angular-locale_nl-aw.js" />
+    <Content Include="scripts\i18n\angular-locale_nl-be.js" />
+    <Content Include="scripts\i18n\angular-locale_nl-cw.js" />
+    <Content Include="scripts\i18n\angular-locale_nl-nl.js" />
+    <Content Include="scripts\i18n\angular-locale_nl-sx.js" />
+    <Content Include="scripts\i18n\angular-locale_nl.js" />
+    <Content Include="scripts\i18n\angular-locale_no.js" />
+    <Content Include="scripts\i18n\angular-locale_or-in.js" />
+    <Content Include="scripts\i18n\angular-locale_or.js" />
+    <Content Include="scripts\i18n\angular-locale_pl-pl.js" />
+    <Content Include="scripts\i18n\angular-locale_pl.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-ao.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-br.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-gw.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-mz.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-pt.js" />
+    <Content Include="scripts\i18n\angular-locale_pt-st.js" />
+    <Content Include="scripts\i18n\angular-locale_pt.js" />
+    <Content Include="scripts\i18n\angular-locale_ro-md.js" />
+    <Content Include="scripts\i18n\angular-locale_ro-ro.js" />
+    <Content Include="scripts\i18n\angular-locale_ro.js" />
+    <Content Include="scripts\i18n\angular-locale_ru-md.js" />
+    <Content Include="scripts\i18n\angular-locale_ru-ru.js" />
+    <Content Include="scripts\i18n\angular-locale_ru-ua.js" />
+    <Content Include="scripts\i18n\angular-locale_ru.js" />
+    <Content Include="scripts\i18n\angular-locale_sk-sk.js" />
+    <Content Include="scripts\i18n\angular-locale_sk.js" />
+    <Content Include="scripts\i18n\angular-locale_sl-si.js" />
+    <Content Include="scripts\i18n\angular-locale_sl.js" />
+    <Content Include="scripts\i18n\angular-locale_sq-al.js" />
+    <Content Include="scripts\i18n\angular-locale_sq.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-cyrl-ba.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-cyrl-me.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-cyrl-rs.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-cyrl.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-latn-ba.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-latn-me.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-latn-rs.js" />
+    <Content Include="scripts\i18n\angular-locale_sr-latn.js" />
+    <Content Include="scripts\i18n\angular-locale_sr.js" />
+    <Content Include="scripts\i18n\angular-locale_sv-fi.js" />
+    <Content Include="scripts\i18n\angular-locale_sv-se.js" />
+    <Content Include="scripts\i18n\angular-locale_sv.js" />
+    <Content Include="scripts\i18n\angular-locale_sw-ke.js" />
+    <Content Include="scripts\i18n\angular-locale_sw-tz.js" />
+    <Content Include="scripts\i18n\angular-locale_sw.js" />
+    <Content Include="scripts\i18n\angular-locale_ta-in.js" />
+    <Content Include="scripts\i18n\angular-locale_ta-lk.js" />
+    <Content Include="scripts\i18n\angular-locale_ta.js" />
+    <Content Include="scripts\i18n\angular-locale_te-in.js" />
+    <Content Include="scripts\i18n\angular-locale_te.js" />
+    <Content Include="scripts\i18n\angular-locale_th-th.js" />
+    <Content Include="scripts\i18n\angular-locale_th.js" />
+    <Content Include="scripts\i18n\angular-locale_tl.js" />
+    <Content Include="scripts\i18n\angular-locale_tr-tr.js" />
+    <Content Include="scripts\i18n\angular-locale_tr.js" />
+    <Content Include="scripts\i18n\angular-locale_uk-ua.js" />
+    <Content Include="scripts\i18n\angular-locale_uk.js" />
+    <Content Include="scripts\i18n\angular-locale_ur-in.js" />
+    <Content Include="scripts\i18n\angular-locale_ur-pk.js" />
+    <Content Include="scripts\i18n\angular-locale_ur.js" />
+    <Content Include="scripts\i18n\angular-locale_vi-vn.js" />
+    <Content Include="scripts\i18n\angular-locale_vi.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-cn.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hans-cn.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hans-hk.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hans-mo.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hans-sg.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hans.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hant-hk.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hant-mo.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hant-tw.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hant.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-hk.js" />
+    <Content Include="scripts\i18n\angular-locale_zh-tw.js" />
+    <Content Include="scripts\i18n\angular-locale_zh.js" />
+    <Content Include="scripts\i18n\angular-locale_zu-za.js" />
+    <Content Include="scripts\i18n\angular-locale_zu.js" />
+    <Content Include="scripts\ionic-angular.js" />
+    <Content Include="scripts\ionic-angular.min.js" />
+    <Content Include="scripts\ionic.bundle.js" />
+    <Content Include="scripts\ionic.bundle.min.js" />
+    <Content Include="scripts\ionic.js" />
+    <Content Include="scripts\ionic.min.js" />
+    <Content Include="scripts\version.json" />
+    <Content Include="templates\browse.html" />
+    <Content Include="templates\login.html" />
+    <Content Include="templates\menu.html" />
+    <Content Include="templates\playlist.html" />
+    <Content Include="templates\playlists.html" />
+    <Content Include="templates\search.html" />
+    <Folder Include="images\" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows8\scripts\platformOverrides.js" />
+    <Content Include="merges\windows8\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows8\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows8\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <TypeScriptCompile Include="scripts\apps\index.ts" />
+    <TypeScriptCompile Include="scripts\platformOverrides.ts" />
+    <Content Include="css\index.css" />
+    <Content Include="packages.config" />
+    <Content Include="res\cert\android\ant.properties" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows8\logo.png" />
+    <Content Include="res\icons\windows8\smalllogo.png" />
+    <Content Include="res\icons\windows8\storelogo.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows8\splashscreen.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+    <TypeScriptCompile Include="scripts\typings\cordova\cordova.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\BatteryStatus.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Camera.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Contacts.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Device.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceMotion.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\DeviceOrientation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Dialogs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileSystem.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\FileTransfer.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Globalization.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\InAppBrowser.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Media.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\MediaCapture.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\NetworkInformation.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Push.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Splashscreen.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\Vibration.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\cordova\plugins\WebSQL.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Multi-Device Hybrid App</ProjectUISubcaption>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Multi-Device Hybrid Apps could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Multi-Device Hybrid Apps has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
